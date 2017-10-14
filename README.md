@@ -1,0 +1,2 @@
+# ACADGILD_JS_Session6_Assignment1
+Computing Employee Bonus
