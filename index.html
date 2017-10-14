@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/home/reshma/Documents/AcadGild/Web_Fundamentals/Session-6_06Oct2017/Assignment-1/style.css">
+	<script src="/home/reshma/Documents/AcadGild/Web_Fundamentals/Session-6_06Oct2017/Assignment-1/script.js"></script>
+	<title>S-6 Assignment-1</title>
+</head>
+
+<body>
+	<!--Computing Employee Bonus-->
+<form name="emp">
+	<div class=mainDiv>
+		<center>
+			<!-- We are using a table to evenly space the content (text and input boxes)-->
+			<table>
+				<tr>
+					<td>
+						<span>Enter employee basic salary:</span>
+					</td>
+					<td>
+						<!-- This is where you input the salary -->
+						<input type="text" name="salary" id="salary">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span>Enter no. of work hours per day:</span>
+					</td>
+					<td>
+						<!-- This is where you input the salary -->
+						<input type="text" name="wrkHrs" id="wrkHrs">
+					</td>
+				</tr>
+			</table>
+		</center>
+		<br>
+		<br>
+		<center>
+			<!-- Cicking on this function calls your JS function by passing the input values -->
+			<input type="button" class="button button1" value="Compute Revised Salary" onClick="findSal(document.getElementById('salary').value, document.getElementById('wrkHrs').value)">
+			<br>
+			<!-- p element where result is displayed -->
+			<p id="result"></p>
+		</center>
+	</div>
+</form>
+
+</body>
+</html>
